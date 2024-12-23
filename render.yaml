@@ -152,6 +152,6 @@ services:
       - key: NEXT_PUBLIC_DISABLE_SIGNUP
         sync: false
 
-databases:
-  - name: documenso-db
-    plan: free
+# databases:
+#  - name: documenso-db
+#    plan: free
