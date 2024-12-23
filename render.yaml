@@ -26,10 +26,10 @@ services:
 
       # Database
       - key: NEXT_PRIVATE_DATABASE_URL
-        value: ${NEON_DB_URL}
+        sync: false
 
       - key: NEXT_PRIVATE_DIRECT_DATABASE_URL
-        value: ${NEON_DB_URL}
+        sync: false
 
       # URLs
       - key: NEXT_PUBLIC_WEBAPP_URL
