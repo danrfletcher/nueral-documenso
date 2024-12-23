@@ -26,14 +26,12 @@ services:
 
       # Database
       - key: NEXT_PRIVATE_DATABASE_URL
-        fromDatabase:
-          name: documenso-db
-          property: connectionString
+        sync: false
+        value: ${NEON_DB_URL}
 
       - key: NEXT_PRIVATE_DIRECT_DATABASE_URL
-        fromDatabase:
-          name: documenso-db
-          property: connectionString
+        sync: false
+        value: ${NEON_DB_URL}
 
       # URLs
       - key: NEXT_PUBLIC_WEBAPP_URL
