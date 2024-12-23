@@ -26,11 +26,9 @@ services:
 
       # Database
       - key: NEXT_PRIVATE_DATABASE_URL
-        sync: false
         value: ${NEON_DB_URL}
 
       - key: NEXT_PRIVATE_DIRECT_DATABASE_URL
-        sync: false
         value: ${NEON_DB_URL}
 
       # URLs
